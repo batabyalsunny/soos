@@ -10,8 +10,8 @@ objects = loader.o kernel.o
 %.o: %.s
 	as $(ASPARAMS) -o  $@ $<
 
-mykernel.bin: linker.ld $(objects)
+soos.bin: linker.ld $(objects)
 	ld $(LDPARAMS) -T  $< -o $@ $(objects)
 
-install: mykernel.bin
-	sudo cp $< /boot/mykernel.bin
+install: soos.bin
+	sudo cp $< /boot/soos.bin
