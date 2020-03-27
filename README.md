@@ -8,14 +8,16 @@ Simple Open Operating System
  3. Run the make command `make` or `make soos.bin`
  4. Edit your `boot/grub/grub.cfg` and add below code at the end.
  
-    ```### BEGINE SOOS ###
+    ```
+    ### BEGINE SOOS ###
     
     menuentry 'SOOS' {
         multiboot /boot/soos.bin
         boot
     }
     
-    ### END SOOS ###```
+    ### END SOOS ###
+    ```
  
  5. Reboot your system.
  6. From the boot menu select **"SOOS"**
