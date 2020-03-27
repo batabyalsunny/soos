@@ -8,7 +8,7 @@ objects = loader.o kernel.o
 	g++ $(GPPPARAMS) -o $@ -c $<
 
 %.o: %.s
-	as $(ASPARAMS) -o  $@ $<
+	as $(ASPARAMS) -o $@ $<
 
 soos.bin: linker.ld $(objects)
 	ld $(LDPARAMS) -T  $< -o $@ $(objects)
