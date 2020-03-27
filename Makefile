@@ -32,5 +32,5 @@ iso: soos.bin
 	echo '}' >> iso/boot/grub/grub.cfg
 	echo '\n' >> iso/boot/grub/grub.cfg
 	echo '### END SOOS ###' >> iso/boot/grub/grub.cfg
-	grub-mkrescue --output $@ iso
+	grub-mkrescue --output soos.iso iso
 	rm -rf iso
